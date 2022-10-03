@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["Taifin <90160112+Taifin@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+grpcio = "^1.49.1"
+virtualenv = "^20.16.5"
+grpcio-tools = "^1.49.1"
+unittest = "^0.0"
+parameterized = "^0.8.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

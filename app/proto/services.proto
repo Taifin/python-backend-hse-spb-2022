@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+message Expr {
+    int32 lhs = 1;
+    int32 rhs = 2;
+    string operation = 3;
+}
+
+message Calculated {
+    int32 result = 1;
+    string operation = 2;
+    int32 error = 3;
+}
+
+service exprEval {
+    rpc Eval(Expr) returns (Calculated);
+}
